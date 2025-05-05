@@ -3,7 +3,16 @@
     static void Main(string[] args)
     {
         // 1-я задача
+        string original = "aaabbcccdde";
+        Console.WriteLine($"Исходная строка: {original}");
 
+        // Компрессия
+        string compressed = StringCompression.Compress(original);
+        Console.WriteLine($"Сжатая строка: {compressed}");
+
+        // Декомпрессия
+        string decompressed = StringCompression.Decompress(compressed);
+        Console.WriteLine($"Восстановленная строка: {decompressed}");
 
         // 2-я задача
         var tasks = new List<Task>();
